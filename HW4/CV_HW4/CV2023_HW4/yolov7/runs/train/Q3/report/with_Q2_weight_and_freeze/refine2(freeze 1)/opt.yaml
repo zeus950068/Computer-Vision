@@ -1,0 +1,42 @@
+weights: /content/drive/MyDrive/Colab Notebooks/CV_HW4/yolov7/runs/train/Q2/report/way2/refine/weights/best.pt
+cfg: ''
+data: ./data/citycam.yaml
+hyp: data/hyp.scratch.p5.yaml
+epochs: 50
+batch_size: 12
+img_size:
+- 640
+- 640
+rect: false
+resume: false
+nosave: false
+notest: false
+noautoanchor: false
+evolve: false
+bucket: ''
+cache_images: false
+image_weights: false
+device: ''
+multi_scale: false
+single_cls: false
+adam: false
+sync_bn: false
+local_rank: -1
+workers: 8
+project: runs/train/Q3/report/with_Q2_weight_and_freeze
+entity: null
+name: refine
+exist_ok: false
+quad: false
+linear_lr: false
+label_smoothing: 0.0
+upload_dataset: false
+bbox_interval: -1
+save_period: -1
+artifact_alias: latest
+freeze:
+- 1
+world_size: 1
+global_rank: -1
+save_dir: runs/train/Q3/report/with_Q2_weight_and_freeze/refine2
+total_batch_size: 12
